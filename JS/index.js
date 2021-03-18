@@ -1,7 +1,24 @@
 let paragraph = document.getElementById('mainParagraph');
+let btnNumeric = document.getElementById('numeric');
+let btnText = document.getElementById('text');
+let btnBoolean = document.getElementById('boolean');
 
-paragraph.addEventListener("click", WriteParagraph);
+btnNumeric.addEventListener("click", writeNumeric);
+btnText.addEventListener("click", writeText);
+btnBoolean.addEventListener("click", writeBooleanV);
 
-function WriteParagraph(){
-    paragraph.textContent='Hola mundo.'
+
+function writeNumeric(){
+    let numericV = 2+2;
+    paragraph.textContent=numericV;
+}
+
+function writeText(){
+    let textV = "Tony.";
+    paragraph.textContent=textV;
+}
+
+function writeBooleanV(){
+    let booleanV = true;
+    paragraph.textContent = booleanV;
 }
