@@ -40,7 +40,7 @@ function showTimes(){
     let numero1MObj = Number(document.getElementById("numero1M").value); 
     let numero2MObj = Number(document.getElementById("numero2M").value);
 
-    let final_showTimes = numero1MObj*numero2MObj;
+    let final_showTimes = numero1MObj * numero2MObj;
 
     let containerResultadoMObj = document.getElementById("containerTimes");
     containerResultadoMObj.innerText = final_showTimes;
