@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Hipotenusa</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <header>
+            <div class="row">
+                <div class="col-12">
+                    <h1>Calcular la hipotenusa</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="form-group mt-3">
+          <label for="">Valor del primer cateto</label>
+          <input
+          type="number"
+          id="A"
+          class="form-control"
+          placeholder="Valor del primer cateto"
+          aria-describedby="helpId">
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="">Valor del segundo cateto</label>
+            <input
+            type="number"
+            id="B"
+            class="form-control"
+            placeholder="Valor del segundo cateto"
+            aria-describedby="helpId">
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-12">
+                <button
+                type="button"
+                id="btnCalcular"
+                class="btn btn-primary btn-lg btn-block">
+                    Calcular</button>
+            </div>
+        </div>
+        <div class="alert alert-primary mt-3" role="alert">
+            <span id="resultado"></span>
+        </div>
+
+    </div>
+
+
+<script src="./../JS/hipotenusa.js"></script>    
+</body>
+</html>
